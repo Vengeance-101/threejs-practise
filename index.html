@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Vite App</title>
+    <style>
+      /* Ensure canvas fills the viewport */
+      body,
+      html,
+      #main-canvas {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-canvas">
+      <canvas id="canvas" class="w-full h-full"></canvas>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
