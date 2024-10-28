@@ -84,14 +84,16 @@ gltfLoader.load("/model.glb", (gltf) => {
   // Find the 'face' object within the model's hierarchy
   faceObject = model.getObjectByName("face");
 
+  faceObject.rotation.x = 0.2;
+
   if (!faceObject) {
     console.warn("Face object not found in the model.");
   }
 
   // Set the position of the model to move it closer to the camera
-  model.position.z = 2.5; // Move the model closer to the camera
-  model.position.y = 0.4; // Slightly lift the model
-  model.rotation.x = -0.1;
+  model.position.z = 2.6; // Move the model closer to the camera
+  model.position.y = 0.5; // Slightly lift the model
+  model.rotation.x = -0.2;
 
   // Set the camera position and rotation based on the exported camera
   const exportedCamera = gltf.cameras[0]; // Use the first camera in the GLTF file
